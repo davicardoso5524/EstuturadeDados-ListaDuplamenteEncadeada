@@ -33,6 +33,25 @@ public class ListaDuplamenteEncadeada {
 		}
 	}
 	
+	public void imprimirLista() {
+        No atual = primeiro;
+        while (atual != null) {
+            System.out.print(atual.dado + " ");
+            atual = atual.proximo;
+        }
+        System.out.println();
+    }
+	
+	public void imprimirListaInversa() {
+        No atual = ultimo;
+        while (atual != null) {
+            System.out.print(atual.dado + " ");
+            atual = atual.anterior;
+        }
+        System.out.println();
+    }
+	
+	
 	public void remover(int dado) {
 		No atual = primeiro;
 		while (atual != null) {
